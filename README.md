@@ -17,7 +17,7 @@ The simple List component is a React component that renders a list of items as a
 * The Items are displayed on the webpage and whenever user click on a single list item it should change colour from red to green and vice versa.
 * The `isSelected` boolean variable is use for changing the background color of the clicked list item to green if true or else red if false.
 * The `onClickHandler()` function sets the index of the particular item using the 'useState' hook named as 'selectedIndex'.
-* So Combining both 'isSelected' and 'onClickHandler' trigger the 'selectedIndex' hook and the  variable is compared to all the mapped indices where it checks the indices if matched then it become green or else becomes red.
+* So Combining both `isSelected` and `onClickHandler` trigger the `selectedIndex` hook and the  variable is compared to all the mapped indices where it checks the indices if matched then it become green or else becomes red.
 
 
 ## Q2. What problems / warnings are there with code? ##
