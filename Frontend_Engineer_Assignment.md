@@ -1,4 +1,4 @@
-# Harsh-Bansal_Front-End
+#  STEELEYE LIMITED FRONTEND ENGINEER ASSIGNMENT
 
 # Q1. Explain what the simple List component does.
 
