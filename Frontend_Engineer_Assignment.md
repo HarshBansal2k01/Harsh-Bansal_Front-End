@@ -2,7 +2,7 @@
 
 # Q1. Explain what the simple List component does.
 
-The simple List component is a React component that renders a list of items as an unordered list (<ul>) element.The code contains two components which are `WrappedListComponent` and `WrappedSingleListItem`.Relation of component goes like, `WrappedListComponent` it's a parent component whereas `WrappedSingleListItem` is child component. Here in the code "items" is array of object and  each object contains an element "text" which is string type which rendered on the webpage
+The simple List component is a React component that renders a list of items as an unordered list onto the webpage.The code contains two components which are `WrappedListComponent` and `WrappedSingleListItem`.Relation of component goes like, `WrappedListComponent` it's a parent component whereas `WrappedSingleListItem` is child component. Here in the code "items" is array of object and  each object contains an element "text" which is string type which rendered on the webpage
 
 ## Functioning of simple List component ##
 
@@ -10,7 +10,7 @@ The simple List component is a React component that renders a list of items as a
   * memo :- It will only re-render the component if its props have changed. This can improve performance by preventing unnecessary re-renders.
 * The `WrappedListComponent` generetares complete list of item using the child component `WrappedSingleListComponent`.
 
-*The List component receives an array of objects named `items` as props 
+* The List component receives an array of objects named `items` as props 
 * The item array mapped in `WrappedListComponent` inside ul tag
 * Set of props are passed in `WrappedSingleListItem` component 
     * { key={index}, text={item.text} ,index={index},isSelected={setSelectedIndex === index} ,onClickHandler={() => handleClick(index)} }
