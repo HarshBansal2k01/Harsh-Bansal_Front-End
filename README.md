@@ -2,25 +2,21 @@
 
 # Q1. Explain what the simple List component does.
 
-After understanding the code, I was able to figure out that the code contains two components
-which are “WrappedListComponent” and “WrappedSingleListItem”.
-The relation between the components were as follows :-
-“WrappedListComponent” it's a parent component whereas “WrappedSingleListItem” is child component.
-Here in the code "items" is array of object and  each object contains an element "text" which is string type.
+The simple List component is a React component that renders a list of items as an unordered list (<ul>) element.The code contains two components which are `WrappedListComponent` and `WrappedSingleListItem`.Relation of component goes like, `WrappedListComponent` it's a parent component whereas `WrappedSingleListItem` is child component. Here in the code "items" is array of object and  each object contains an element "text" which is string type which rendered on the webpage
 
 ## Functioning of simple List component ##
 
-* The “WrappedSingleListComponent” is a memoized functional component as it uses 'memo' that displays a single item with green and red as background colour depending upon the isSelected boolean value.
+* The `WrappedSingleListComponent` is a memoized functional component as it uses `memo` that displays a single item with green and red as background colour depending upon the isSelected boolean value.
   * memo :- It will only re-render the component if its props have changed. This can improve performance by preventing unnecessary re-renders.
-* The “WrappedListComponent” generetares complete list of item using the child component “WrappedSingleListComponent”.
+* The `WrappedListComponent` generetares complete list of item using the child component `WrappedSingleListComponent`.
 
-*The List component receives an array of objects named 'items' as props 
-* The item array mapped in “WrappedListComponent” inside ul tag
-* Set of props are passed in “WrappedSingleListItem” component 
-    * { key={index}, text={item.text} ,index={index},isSelected={setSelectedIndex === index} ,onClickHandler={() => handleClick(index)} }”
-* The Items are displayed on the webpage and whenver user click on a single list item it should change colour from red to green and vice versa.
-* The 'isSelected' booleam variable is use for changing the background color of the clicked list item to green if true or else red if false
-* The `onClickHandler()` function sets the index of the particular item using the 'useState' hook named as 'selectedIndex'
+*The List component receives an array of objects named `items` as props 
+* The item array mapped in `WrappedListComponent` inside ul tag
+* Set of props are passed in `WrappedSingleListItem` component 
+    * { key={index}, text={item.text} ,index={index},isSelected={setSelectedIndex === index} ,onClickHandler={() => handleClick(index)} }
+* The Items are displayed on the webpage and whenever user click on a single list item it should change colour from red to green and vice versa.
+* The `isSelected` boolean variable is use for changing the background color of the clicked list item to green if true or else red if false.
+* The `onClickHandler()` function sets the index of the particular item using the 'useState' hook named as 'selectedIndex'.
 * So Combining both 'isSelected' and 'onClickHandler' trigger the 'selectedIndex' hook and the  variable is compared to all the mapped indices where it checks the indices if matched then it become green or else becomes red.
 
 
