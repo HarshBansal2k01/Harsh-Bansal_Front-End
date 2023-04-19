@@ -20,7 +20,7 @@ Here in the code "items" is array of object and  each object contains an element
     * { key={index}, text={item.text} ,index={index},isSelected={setSelectedIndex === index} ,onClickHandler={() => handleClick(index)} }”
 * The Items are displayed on the webpage and whenver user click on a single list item it should change colour from red to green and vice versa.
 * The 'isSelected' booleam variable is use for changing the background color of the clicked list item to green if true or else red if false
-* The 'onClickHandler()' function sets the index of the particular item using the 'useState' hook named as 'selectedIndex'
+* The `onClickHandler()` function sets the index of the particular item using the 'useState' hook named as 'selectedIndex'
 * So Combining both 'isSelected' and 'onClickHandler' trigger the 'selectedIndex' hook and the  variable is compared to all the mapped indices where it checks the indices if matched then it become green or else becomes red.
 
 
