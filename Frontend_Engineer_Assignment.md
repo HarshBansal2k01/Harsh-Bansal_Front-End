@@ -28,7 +28,7 @@ The simple List component is a React component that renders a list of items as a
 * The isSelected prop of the SingleListItem component is a boolean value that indicates whether the item is selected or not. However, the code is passed with  selectedIndex value, which is a  null. This will cause a type mismatch warning and may result in incorrect behavior of the component. So, changing `isSelected` prop of the `SingleListItem` component to be a function that compares the index with the selectedIndex value and returns a boolean.
 * The onClickHandler props is assigned incorrectly, it should be called as a callback to be called when the list item is clicked.
 
-##  Please fix, optimize, and/or modify the component as much as you think is necessary. ##
+## Q3. Please fix, optimize, and/or modify the component as much as you think is necessary. ##
 
 * Swapped the order of `setSelectedIndex` and `selectedIndex` in `useState` hook.
 * Changed the definition of `PropTypes.array` and `PropTypes.shapeOf` to `PropTypes.array` and `PropTypes.shapeOf` in `WrappedListComponent.propTypes`
